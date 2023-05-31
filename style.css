@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --azul1: #006384;
+    --azul2: #8fadbc;
+    --amarelo: #ffc000;
+}
+
+header {
+    background: linear-gradient(90.05deg, #000000 24.85%, #006384 64.76%, #002F45 99.45%), #006384;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    width: auto;
+    height: 100px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: end;
+
+}
+
+.posicionamento_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin-right: 25px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu_lateral {
+    width: 250px;
+    height: 530px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    /* background: rgba(0, 99, 132, 0.24); */
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 99, 132, 0.24) 81.56%, rgba(0, 99, 132, 0) 130%);
+    backdrop-filter: blur(48.5px);
+}
+
+hr {
+    width: 150px;
+    height: 1px;
+    background-color: white;
+
+}
+
+
+main {
+    background-image: url(./img/background.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 650px;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.sair a {
+    text-decoration: none;
+    color: white;
+}
+
+.separador {
+    background-clip: content-box;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+
+.conteudo_preenchimento {
+    /*background-color: blueviolet;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preenchimentos{
+    /*background-color: #ffc000;*/
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome,
+.cpf,
+.matricula,
+.email,
+.senha,
+.senha2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.funcao,
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+
+.preenchimento_compacto {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    width: 360px;
+    color: white;
+}
+
+.data input,
+select{
+    width: 170px;
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    color: white;
+}
+
+button{
+    
+    background: rgba(0, 86, 115, 0.09);
+    border: 0.3px solid #C8D5DC;
+    box-shadow: 0px 4px 19px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    width: 95px;
+    height: 30px;
+    color:white;
+    text-transform: uppercase;
+}
