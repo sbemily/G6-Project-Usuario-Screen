@@ -19,7 +19,7 @@ header {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
 }
 
@@ -27,8 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
-    margin-right: 25px;
+    width: 90%;
 }
 
 .logo img {
@@ -42,9 +41,6 @@ header {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
-    /* background: rgba(0, 99, 132, 0.24); */
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 99, 132, 0.24) 81.56%, rgba(0, 99, 132, 0) 130%);
-    backdrop-filter: blur(48.5px);
 }
 
 hr {
@@ -71,6 +67,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 90%;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 99, 132, 0.24) 81.56%, rgba(0, 99, 132, 0) 130%);
+    backdrop-filter: blur(48.5px);
 }
 
 .sair a {
@@ -101,7 +100,7 @@ nav div {
     align-items: center;
 }
 
-.preenchimentos{
+.preenchimentos {
     /*background-color: #ffc000;*/
     width: 80%;
     height: 100%;
@@ -122,7 +121,7 @@ nav div {
 
 
 .funcao,
-.data{
+.data {
     display: flex;
     flex-direction: column;
     width: 170px;
@@ -143,16 +142,15 @@ input {
 }
 
 .data input,
-select{
+select {
     width: 170px;
     background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(4px);
     border-radius: 5px;
-    color: white;
 }
 
-button{
-    
+button {
+
     background: rgba(0, 86, 115, 0.09);
     border: 0.3px solid #C8D5DC;
     box-shadow: 0px 4px 19px rgba(255, 255, 255, 0.25);
@@ -160,6 +158,40 @@ button{
     border-radius: 10px;
     width: 95px;
     height: 30px;
-    color:white;
+    color: white;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .menu_barras {
+        display: initial;
+    }
+
+    .posicionamento_header svg {
+        width: 50px;
+        height: 50px;
+        fill: white;
+    }
+
+    .menu_lateral {
+        position: relative;
+    }
+
+    .menu_lateral nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        background: rgba(0, 82, 110, 0.26);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(11.5px);
+        align-items: center;
+        justify-content: space-between;
+        height: 90%;
+        
+
+    }
+
+    hr{
+        display: none;
+    }
 }
